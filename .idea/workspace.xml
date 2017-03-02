@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b1fda3b-4588-416c-8f3d-6a1e069e36a6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/config/manifest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/images/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/javascripts/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/javascripts/cable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/javascripts/channels/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/javascripts/users.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/stylesheets/application.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/stylesheets/scaffolds.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/assets/stylesheets/users.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/channels/application_cable/channel.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/channels/application_cable/connection.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/controllers/application_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/controllers/concerns/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/controllers/users_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/helpers/application_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/helpers/users_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/jobs/application_job.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/mailers/application_mailer.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/models/application_record.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/models/concerns/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/models/user.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/layouts/application.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/layouts/mailer.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/layouts/mailer.text.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/users/_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/users/_user.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/users/edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/users/index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/users/index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/users/new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/users/show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/app/views/users/show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/bin/bundle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/bin/rails" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/bin/rake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/bin/setup" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/bin/update" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config.ru" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/application.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/boot.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/cable.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/database.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/environment.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/environments/development.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/environments/production.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/environments/test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/application_controller_renderer.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/assets.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/backtrace_silencers.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/cookies_serializer.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/filter_parameter_logging.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/inflections.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/mime_types.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/new_framework_defaults.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/session_store.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/initializers/wrap_parameters.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/locales/en.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/puma.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/routes.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/config/spring.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/db/migrate/20170302080846_create_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/db/schema.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/db/seeds.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/lib/assets/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/lib/tasks/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/public/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/public/422.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/public/500.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/public/apple-touch-icon-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/public/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/public/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/controllers/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/controllers/users_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/fixtures/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/fixtures/files/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/fixtures/users.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/helpers/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/integration/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/mailers/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/models/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/models/user_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/test/test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/vendor/assets/javascripts/.keep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_app/vendor/assets/stylesheets/.keep" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test_app/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/twitter_ruby.iml" afterPath="$PROJECT_DIR$/.idea/twitter_ruby.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>vend</find>
+      <find>vendor</find>
+      <find>.i</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test_app/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1282" />
+    <option name="height" value="998" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test_app" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="add_unversioned_files" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b1fda3b-4588-416c-8f3d-6a1e069e36a6" name="Default" comment="" />
+      <created>1488441947561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488441947561</updated>
+      <workItem from="1488441950121" duration="609000" />
+      <workItem from="1488442571667" duration="400000" />
+      <workItem from="1488443011151" duration="88000" />
+      <workItem from="1488443144920" duration="69000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1166000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="27" width="1282" height="998" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26422763" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_app/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/test_app/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
