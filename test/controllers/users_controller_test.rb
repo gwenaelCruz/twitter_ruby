@@ -36,7 +36,8 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   test "should update user" do
     patch user_url(@user), params: { user: { img_url: @user.img_url, name: @user.name } }
     assert_redirected_to user_url(@user)
-  end
+      assert true
+    end
 
   test "should destroy user" do
     assert_difference('User.count', -1) do
