@@ -1,10 +1,10 @@
-class FollowedController < ApplicationController
+class FollowingsController < ApplicationController
   before_action :set_user
 
   # GET /users
   # GET /users.json
   def index
-    @follows = Follow.where('follower_id', @user.id)
+    @followings = @user.followings
   end
 
   # GET /users/1

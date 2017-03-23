@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>People who follow you</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Img url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @follows.each do |follow| %>
+      <tr>
+        <td><%= follow.name %></td>
+        <td><%= follow.img_url %></td>
+        <td>
+          <form action="<% user_followers_path %>" method="post">
+          </form>
+
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
