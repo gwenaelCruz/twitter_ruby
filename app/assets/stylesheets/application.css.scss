@@ -1,0 +1,16 @@
+//@import "bootstrap"
+//@import "bootstrap-sprockets"
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "scaffolds";
+@import "users";
+
+
+html {
+  background-color: #565656;
+  font-family: "Open Sans", "Helvetica Neue", Tahoma, sans-serif;
+  font-size: 16px;
+  color: #d6d6d6;
+}
+

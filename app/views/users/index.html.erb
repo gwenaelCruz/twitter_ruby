@@ -1,22 +1,25 @@
 <div class="container">
-  <div class="page-header">
     <h1>Users</h1>
-  </div>
 
-
-  <div class="row">
+  <div class="users">
     <% @users.each do |user| %>
-        <div class="col-md-2 col-sm-3 user">
-          <img class="img-responsive img-circle" src="<%= user.img_url %>" alt="<%= user.img_url %>">
+        <div class="user">
+          <%= link_to image_tag(user.img_url), user %>
           <h2 class="text-center"><%= user.name %></h2>
 
-          <div id="buttons">
-              <%= link_to 'Show', user, class: "btn btn-primary" %>
-              <%= link_to 'Edit', edit_user_path(user), class: "btn btn-primary" %>
-              <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+          <div class="buttons">
+              <%= link_to edit_user_path(user) do %>
+                <%= icon('edit', class: 'fa-1x') %>
+              <% end %>
+              <%= link_to user, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                <%= icon('trash', class: 'fa-1x', ) %>
+              <% end %>
           </div>
         </div>
     <% end %>
+    <div class="user">
+      <div class="placeholder"></div>
+    </div>
 
   </div>
 

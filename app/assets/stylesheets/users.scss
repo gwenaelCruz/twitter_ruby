@@ -1,3 +1,75 @@
 // Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.sass.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$blanc : #ffffff;
+
+.users{
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-around;
+  flex-flow: row wrap;
+
+  .user{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: $blanc;
+
+    &:hover{
+      cursor: pointer;
+      img{
+        opacity: 1;
+        box-shadow: 0 0 20px black;
+      }
+    }
+
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+      width: 50%;
+    }
+
+    .placeholder:before{
+      position: absolute;
+      left: 30px;
+      top: 0;
+      text-align: center;
+      vertical-align: middle;
+      content: "\f234";
+      font-family: FontAwesome;
+      font-size: 5.0rem;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      color: #707070;
+    }
+
+    img{
+      border-radius: 50%;
+      width: 50%;
+      opacity: 0.6;
+      border: black 4px solid;
+      cursor: pointer;
+      -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+      -moz-transition: -moz-transform, ease 0.5s;
+      -o-transition: -o-transform, ease 0.5s;
+      -webkit-transition: -webkit-transform, ease 0.5s;
+      transition: transform, ease 0.5s;
+      -moz-perspective: 1000;
+      -webkit-perspective: 1000;
+      perspective: 1000;
+      -moz-transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+  }
+}
