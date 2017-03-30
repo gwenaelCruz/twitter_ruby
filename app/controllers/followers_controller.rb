@@ -4,7 +4,7 @@ class FollowersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @follows = Follow.where.not('follower_id', @user.id)
+    @follows = @user.follows
   end
 
   # GET /users/1

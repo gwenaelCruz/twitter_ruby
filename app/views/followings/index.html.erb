@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>People who follow you</h1>
+<h1>People you follow </h1>
 
 <table>
   <thead>
@@ -12,12 +12,13 @@
   </thead>
 
   <tbody>
-    <% @followed.each do |follow| %>
+    <% @followings.each do |following| %>
       <tr>
-        <td><%= follow.name %></td>
-        <td><%= follow.img_url %></td>
+        <td><%= following.name %></td>
+        <td><%= following.img_url %></td>
         <td>
           <form action="<% user_followers_path %>" method="post">
+            <button type="submit"></button>
           </form>
 
         </td>
