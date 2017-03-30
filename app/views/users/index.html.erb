@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Users</h1>
+  <h1 class="bvn">Welcome !</h1>
 
   <div class="users">
     <% @users.each do |user| %>
@@ -9,18 +9,18 @@
 
           <div class="buttons">
               <%= link_to edit_user_path(user) do %>
-                <%= icon('edit', class: 'fa-2x') %>
+                <%= icon('edit', class: 'fa-2x', title:'Edit user') %>
               <% end %>
               <%= link_to user, method: :delete, data: { confirm: 'Are you sure?' } do %>
-                <%= icon('trash', class: 'fa-2x', ) %>
+                <%= icon('trash', class: 'fa-2x', title:'Delete user') %>
               <% end %>
           </div>
         </div>
     <% end %>
     <div class="user">
-      <!--<%= link_to new_user_path do %>-->
+      <%= link_to new_user_path do %>
         <div class="placeholder"></div>
-      <!--<% end %>-->
+      <% end %>
     </div>
 
   </div>

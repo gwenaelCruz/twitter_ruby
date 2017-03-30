@@ -6,6 +6,10 @@
 @import "scaffolds";
 @import "users";
 
+*{
+  outline: none;
+}
+
 
 html {
   background-color: #565656;

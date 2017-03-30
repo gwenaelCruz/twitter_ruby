@@ -4,11 +4,20 @@
 
 $blanc : #ffffff;
 
+.bvn{
+  text-align: center;
+  margin: 50px 20px;
+}
+
 .users{
   display: flex;
   align-content: flex-start;
   justify-content: space-around;
   flex-flow: row wrap;
+
+  a{
+    text-decoration: none;
+  }
 
   .user{
     display: flex;
@@ -30,9 +39,14 @@ $blanc : #ffffff;
       align-content: center;
       width: 50%;
       a{
-        i{
+        i.fa-trash{
           &:hover{
-            color: #0072b3;
+            color: #98373e;
+          }
+        }
+        i.fa-edit{
+          &:hover{
+            color: #00b398;
           }
         }
       }
