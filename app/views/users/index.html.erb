@@ -9,21 +9,21 @@
 
           <div class="buttons">
               <%= link_to edit_user_path(user) do %>
-                <%= icon('edit', class: 'fa-1x') %>
+                <%= icon('edit', class: 'fa-2x') %>
               <% end %>
               <%= link_to user, method: :delete, data: { confirm: 'Are you sure?' } do %>
-                <%= icon('trash', class: 'fa-1x', ) %>
+                <%= icon('trash', class: 'fa-2x', ) %>
               <% end %>
           </div>
         </div>
     <% end %>
     <div class="user">
-      <div class="placeholder"></div>
+      <!--<%= link_to new_user_path do %>-->
+        <div class="placeholder"></div>
+      <!--<% end %>-->
     </div>
 
   </div>
 
 <br>
-
-<%= link_to 'New User', new_user_path %>
 </div>

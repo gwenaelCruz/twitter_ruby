@@ -21,10 +21,6 @@ $blanc : #ffffff;
 
     &:hover{
       cursor: pointer;
-      img{
-        opacity: 1;
-        box-shadow: 0 0 20px black;
-      }
     }
 
     .buttons{
@@ -33,27 +29,49 @@ $blanc : #ffffff;
       justify-content: space-around;
       align-content: center;
       width: 50%;
+      a{
+        i{
+          &:hover{
+            color: #0072b3;
+          }
+        }
+      }
     }
 
-    .placeholder:before{
-      position: absolute;
-      left: 30px;
-      top: 0;
-      text-align: center;
-      vertical-align: middle;
-      content: "\f234";
-      font-family: FontAwesome;
-      font-size: 5.0rem;
-      width: 200px;
-      height: 200px;
-      line-height: 200px;
-      color: #707070;
+    .placeholder{
+      &:before {
+        text-align: center;
+        vertical-align: middle;
+        content: "\f234";
+        font-family: FontAwesome;
+        font-size: 5.0rem;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        color: #707070;
+        border-radius: 50%;
+        border: #777 solid 2px;
+        padding: 38px;
+        opacity: 0.7;
+        overflow: hidden;
+        -moz-transition: -moz-transform, ease 0.5s;
+        -o-transition: -o-transform, ease 0.5s;
+        -webkit-transition: -webkit-transform, ease 0.5s;
+        transition: transform, ease 0.5s;
+      }
+
+      &:hover{
+        &:before{
+          opacity: 1;
+          box-shadow: 0 0 10px black;
+        }
+      }
     }
 
     img{
       border-radius: 50%;
       width: 50%;
-      opacity: 0.6;
+      opacity: 0.7;
       border: black 4px solid;
       cursor: pointer;
       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
@@ -64,12 +82,11 @@ $blanc : #ffffff;
       -o-transition: -o-transform, ease 0.5s;
       -webkit-transition: -webkit-transform, ease 0.5s;
       transition: transform, ease 0.5s;
-      -moz-perspective: 1000;
-      -webkit-perspective: 1000;
-      perspective: 1000;
-      -moz-transform-style: preserve-3d;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
+
+      &:hover{
+        opacity: 1;
+        box-shadow: 0 0 20px black;
+      }
     }
   }
 }
