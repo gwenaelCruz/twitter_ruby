@@ -15,7 +15,7 @@ class FollowingsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create user" do
+  test "should create following" do
     assert_difference('User.count') do
       post users_url, params: { user: { img_url: @user.img_url, name: @user.name } }
     end
@@ -23,23 +23,12 @@ class FollowingsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to user_url(User.last)
   end
 
-  test "should show user" do
+  test "should show following" do
     get user_url(@user)
     assert_response :success
   end
 
-  test "should get edit" do
-    get edit_user_url(@user)
-    assert_response :success
-  end
-
-  test "should update user" do
-    patch user_url(@user), params: { user: { img_url: @user.img_url, name: @user.name } }
-    assert_redirected_to user_url(@user)
-      assert true
-    end
-
-  test "should destroy user" do
+  test "should destroy following" do
     assert_difference('User.count', -1) do
       delete user_url(@user)
     end
