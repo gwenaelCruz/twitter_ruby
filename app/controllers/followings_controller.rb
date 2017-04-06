@@ -14,7 +14,7 @@ class FollowingsController < ApplicationController
 
   # GET /users/new
   def new
-    @follow = Follow.new
+    @not_followings = User.where.not(id:@user.followings(&:id))
   end
 
   # GET /users/1/edit
