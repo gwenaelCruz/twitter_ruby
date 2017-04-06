@@ -6,7 +6,7 @@ class FollowTest < ActiveSupport::TestCase
   # end
 
   test "get followers" do
-
+    
   end
 
   test "get followings" do

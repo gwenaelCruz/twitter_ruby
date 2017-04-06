@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   name: Test1
   img_url: url_test_1
 
 two:
+  id: 2
   name: Test2
   img_url: url_test_2
