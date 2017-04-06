@@ -1,24 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <h1 class="bvn">People who follow you</h1>
 
-<h1>People who follow you</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Img url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @follows.each do |follow| %>
-      <tr>
-        <td><%= follow.name %></td>
-        <td><%= follow.img_url %></td>
-      </tr>
+  <div class="users">
+    <% @followers.each do |follower| %>
+        <div class="user">
+          <%= link_to image_tag(follower.img_url), follower %>
+          <h2 class="text-center"><%= follower.name %></h2>
+        </div>
     <% end %>
-  </tbody>
-</table>
+
+  </div>
 
 <br>
+</div>
