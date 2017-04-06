@@ -1,16 +1,43 @@
-<p id="notice"><%= notice %></p>
+<ul style="width: 300px;" id="nav-mobile" class="side-nav fixed">
+  <li>
+    <div class="userView">
+      <div class="background">
+          <img src="http://lorempicsum.com/nemo/350/200/1">
+      </div>
+      <a href="#!user"><%= image_tag(@user.img_url, class:'circle') %></a>
+      <a href="#!name"><span class="white-text name">John Doe</span></a>
+      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div>
+  </li>
+  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+  <li><a href="#!">Second Link</a></li>
+  <li><div class="divider"></div></li>
+  <li><a class="subheader">Subheader</a></li>
+  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  <div class="collection">
+    <a href="#!" class="collection-item"><span class="badge">1</span>Alan</a>
+    <a href="#!" class="collection-item"><span class="new badge">4</span>Alan</a>
+    <a href="#!" class="collection-item">Alan</a>
+    <a href="#!" class="collection-item"><span class="badge">14</span>Alan</a>
+  </div>
+</ul>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
 
-<p>
-  <strong>Img url:</strong>
-  <%= @user.img_url %>
-</p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Followers', user_followers_path(@user) %> |
-<%= link_to 'Following', user_followings_path(@user) %> |
-<%= link_to 'Back', users_path %>
+
+
+
+
+<div class="user">
+
+  <h1><%= @user.name %></h1>
+
+  <div class="buttons">
+    <%= link_to 'Edit', edit_user_path(@user) %> |
+    <%= link_to 'Followers', user_followers_path(@user) %> |
+    <%= link_to 'Following', user_followings_path(@user) %> |
+    <%= link_to 'Back', users_path %>
+  </div>
+</div>
+
+
