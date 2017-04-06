@@ -1,5 +1,5 @@
 .idea
 vendor/bundle
 db/*.sqlite3
-tmp/cache
+tmp
 log
