@@ -10,7 +10,7 @@
         <%= link_to image_tag(not_following.img_url), not_following %>
             <h2 class="text-center"><%= not_following.name %></h2>
         <div class="buttons">
-            <%= link_to not_following, method: :post do %>
+            <%= link_to user_following_path(@user.id, not_following), method: :put do %>
               <%= icon('plus', class: 'fa-2x', title:'Follow this user') %>
             <% end %>
         </div>

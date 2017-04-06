@@ -21,17 +21,17 @@ class FollowingsController < ApplicationController
   def edit
   end
 
-  # POST /users
-  # POST /users.json
+  # POST /users/1/followings
+  # POST /users/1/followings.json
   def create
-    @follow = Follow.new(follow_params)
-    @user = User.find(1)
+
+    @following = Follow.new(follower_id:@user.id ,followed_id: [:id])
     respond_to do |format|
-      if @follow.save
-        format.html { redirect_to @user, notice: 'Followed was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
+      if @following.save
+        format.html { redirect_to @user.followings, notice: 'You follow a new user' }
+        format.json { render :show, status: :created, location: @user.followings }
       else
-        format.html { redirect_to @user, notice: 'Follow could not be created'}
+        format.html { redirect_to @user.followings, notice: 'You cannot follow this user'}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -40,12 +40,13 @@ class FollowingsController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    @following = Follow.new(follower_id:@user.id ,followed_id: [:id])
     respond_to do |format|
-      if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { render :show, status: :ok, location: @user }
+      if @following.save
+        format.html { redirect_to @user.followings, notice: 'You follow a new user' }
+        format.json { render :show, status: :created, location: @user.followings }
       else
-        format.html { render :edit }
+        format.html { redirect_to @user.followings, notice: 'You cannot follow this user'}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -72,4 +73,5 @@ class FollowingsController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :img_url)
     end
+
 end
