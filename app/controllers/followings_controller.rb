@@ -14,38 +14,29 @@ class FollowingsController < ApplicationController
 
   # GET /users/new
   def new
-    @follow = Follow.new
+    @not_followings = User.where.not(id:@user.followings(&:id)).where.not(id:@user.id)
   end
 
   # GET /users/1/edit
   def edit
   end
 
-  # POST /users
-  # POST /users.json
+  # POST /users/1/followings
+  # POST /users/1/followings.json
   def create
-    @follow = Follow.new(follow_params)
-    @user = User.find(1)
-    respond_to do |format|
-      if @follow.save
-        format.html { redirect_to @user, notice: 'Followed was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
-      else
-        format.html { redirect_to @user, notice: 'Follow could not be created'}
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
-    end
+
   end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    @following = Follow.new(follower_id:@user.id ,followed_id: params[:id])
     respond_to do |format|
-      if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { render :show, status: :ok, location: @user }
+      if @following.save
+        format.html { redirect_to user_followings_path, notice: 'You follow a new user' }
+        format.json { render :show, status: :created, location: @user.followings }
       else
-        format.html { render :edit }
+        format.html { redirect_to new_user_following_path, notice: 'You cannot follow this user'}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -54,9 +45,9 @@ class FollowingsController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @follow.destroy
+    Follow.where(follower_id: @user).where(followed_id: params[:id]).destroy_all
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to user_followings_path, notice: 'You no longer follow this user' }
       format.json { head :no_content }
     end
   end
@@ -72,4 +63,5 @@ class FollowingsController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :img_url)
     end
+
 end

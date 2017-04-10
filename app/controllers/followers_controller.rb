@@ -4,7 +4,7 @@ class FollowersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @follows = @user.follows
+    @followers = @user.followers
   end
 
   # GET /users/1

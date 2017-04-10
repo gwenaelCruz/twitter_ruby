@@ -1,30 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<h1>People you follow </h1>
+  <p id="notice"><%= notice %></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Img url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <h1>People you follow </h1>
 
-  <tbody>
+  <div class="users">
     <% @followings.each do |following| %>
-      <tr>
-        <td><%= following.name %></td>
-        <td><%= following.img_url %></td>
-        <td>
-          <form action="<% user_followers_path %>" method="post">
-            <button type="submit"></button>
-          </form>
-
-        </td>
-      </tr>
+      <div class="user">
+        <%= link_to image_tag(following.img_url), following %>
+            <h2 class="text-center"><%= following.name %></h2>
+        <div class="buttons">
+            <%= link_to user_following_path(@user.id, following), method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <%= icon('trash', class: 'fa-2x', title:'Delete user from your list') %>
+            <% end %>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
+  </div>
+  <div class="user">
+    <%= link_to new_user_following_path do %>
+      <div class="placeholder"></div>
+    <% end %>
+  </div>
+</div>
