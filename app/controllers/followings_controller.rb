@@ -25,28 +25,18 @@ class FollowingsController < ApplicationController
   # POST /users/1/followings.json
   def create
 
-    @following = Follow.new(follower_id:@user.id ,followed_id: [:id])
-    respond_to do |format|
-      if @following.save
-        format.html { redirect_to @user.followings, notice: 'You follow a new user' }
-        format.json { render :show, status: :created, location: @user.followings }
-      else
-        format.html { redirect_to @user.followings, notice: 'You cannot follow this user'}
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    @following = Follow.new(follower_id:@user.id ,followed_id: [:id])
+    @following = Follow.new(follower_id:@user.id ,followed_id: params[:id])
     respond_to do |format|
       if @following.save
-        format.html { redirect_to @user.followings, notice: 'You follow a new user' }
+        format.html { redirect_to user_followings_path, notice: 'You follow a new user' }
         format.json { render :show, status: :created, location: @user.followings }
       else
-        format.html { redirect_to @user.followings, notice: 'You cannot follow this user'}
+        format.html { redirect_to new_user_following_path, notice: 'You cannot follow this user'}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -55,9 +45,9 @@ class FollowingsController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @follow.destroy
+    Follow.where(follower_id: @user).where(followed_id: params[:id]).destroy_all
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to user_followings_path, notice: 'You no longer follow this user' }
       format.json { head :no_content }
     end
   end
