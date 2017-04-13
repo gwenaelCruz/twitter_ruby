@@ -1,30 +1,27 @@
-class PostController < ApplicationController
+class PostsController < ApplicationController
   before_action :set_user
 
-  # GET /users
+  # GET /users/posts
   # GET /users.json
   def index
-    @users = User.all
   end
 
-  # GET /users/1
-  # GET /users/1.json
+  # GET /users/1/post/1
+  # GET /users/1/post/1.json
   def show
   end
 
   # GET /users/new
   def new
-    @user = User.new
   end
 
   # GET /users/1/edit
   def edit
   end
 
-  # POST /users
-  # POST /users.json
+  # POST /users/1/post
+  # POST /users/1/post.json
   def create
-    @user = User.new(user_params)
 
     respond_to do |format|
       if @user.save

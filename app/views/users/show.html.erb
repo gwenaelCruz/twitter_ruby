@@ -14,3 +14,15 @@
 <%= link_to 'Followers', user_followers_path(@user) %> |
 <%= link_to 'Following', user_followings_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+<p>
+  <strong> Posts :</strong>
+</p>
+
+<% @posts.each do |post| %>
+  <div>
+    <p> <%= post.content %></p>
+  </div>
+<% end %>
+
+<% render 'posts/form', 'post': @new_post, 'user': @user  %>
