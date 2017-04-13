@@ -83,7 +83,7 @@ $textColor: #272727;
       display: block;
       margin: 0 auto;
       width: 50%;
-      opacity: 0.7;
+      opacity: 0.9;
       border: black 4px solid;
       cursor: pointer;
       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
@@ -99,6 +99,23 @@ $textColor: #272727;
         opacity: 1;
         box-shadow: 0 0 20px black;
       }
+    }
+  }
+}
+
+.side-nav{
+  span.badge {
+    margin: 0!important;
+  }
+
+  .userView{
+    .name{
+      margin: 0!important;
+      padding: 8px 0!important;
+    }
+
+    .background{
+      background-color: rgb(47, 170, 158);
     }
   }
 }

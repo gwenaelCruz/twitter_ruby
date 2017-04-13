@@ -1,24 +1,16 @@
-<ul style="width: 300px;" id="nav-mobile" class="side-nav fixed">
+<ul style="width: 300px;" class="side-nav fixed">
   <li>
     <div class="userView">
       <div class="background">
-          <img src="http://lorempicsum.com/nemo/350/200/1">
+          <!--<img src="http://lorempicsum.com/nemo/350/200/1">-->
       </div>
       <a href="#!user"><%= image_tag(@user.img_url, class:'circle') %></a>
-      <a href="#!name"><span class="white-text name">John Doe</span></a>
-      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      <a href="#!name"><span class="white-text name"><%= @user.name %></span></a>
     </div>
   </li>
-  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-  <li><a href="#!">Second Link</a></li>
-  <li><div class="divider"></div></li>
-  <li><a class="subheader">Subheader</a></li>
-  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
   <div class="collection">
-    <a href="#!" class="collection-item"><span class="badge">1</span>Alan</a>
-    <a href="#!" class="collection-item"><span class="new badge">4</span>Alan</a>
-    <a href="#!" class="collection-item">Alan</a>
-    <a href="#!" class="collection-item"><span class="badge">14</span>Alan</a>
+    <a href="#!" class="collection-item"><span class="badge"><%= @user.followers.count %></span>Followers</a>
+    <a href="#!" class="collection-item waves-effect"><span class="badge"><%= @user.followings.size %></span>Followings</a>
   </div>
 </ul>
 
