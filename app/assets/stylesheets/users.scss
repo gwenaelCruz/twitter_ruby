@@ -104,6 +104,8 @@ $textColor: #272727;
 }
 
 .side-nav{
+  transform: translateX(0%) !important;
+
   span.badge {
     margin: 0!important;
   }

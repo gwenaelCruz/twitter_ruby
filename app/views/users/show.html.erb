@@ -1,4 +1,4 @@
-<ul style="width: 300px;" class="side-nav fixed">
+<ul style="width: 300px;" class="side-nav fixed show">
   <li>
     <div class="userView">
       <div class="background">
@@ -13,23 +13,4 @@
     <a href="#!" class="collection-item waves-effect"><span class="badge"><%= @user.followings.size %></span>Followings</a>
   </div>
 </ul>
-
-
-
-
-
-
-
-<div class="user">
-
-  <h1><%= @user.name %></h1>
-
-  <div class="buttons">
-    <%= link_to 'Edit', edit_user_path(@user) %> |
-    <%= link_to 'Followers', user_followers_path(@user) %> |
-    <%= link_to 'Following', user_followings_path(@user) %> |
-    <%= link_to 'Back', users_path %>
-  </div>
-</div>
-
 
