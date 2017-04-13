@@ -11,6 +11,13 @@
     <a href="#!" class="collection-item waves-effect"><span class="badge"><%= @user.followings.size %></span>Followings</a>
   </div>
 </ul>
+<p>
+  <strong> Posts :</strong>
+</p>
+
+<% @posts.each do |post| %>
+  <div>
+    <p> <%= post.content %></p>
 
 <!-- Modal Trigger -->
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
