@@ -2,16 +2,11 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$blanc : #ffffff;
-
-.bvn{
-  text-align: center;
-  margin: 50px 20px;
-}
+$textColor: #272727;
 
 .users{
   display: flex;
-  align-content: flex-start;
+  align-content: center;
   justify-content: space-around;
   flex-flow: row wrap;
 
@@ -24,9 +19,8 @@ $blanc : #ffffff;
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    color: $blanc;
+    color: $textColor;
 
     &:hover{
       cursor: pointer;
@@ -53,6 +47,9 @@ $blanc : #ffffff;
     }
 
     .placeholder{
+      position: relative;
+      bottom: 50px;
+
       &:before {
         text-align: center;
         vertical-align: middle;
@@ -83,9 +80,10 @@ $blanc : #ffffff;
     }
 
     img{
-      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
       width: 50%;
-      opacity: 0.7;
+      opacity: 0.9;
       border: black 4px solid;
       cursor: pointer;
       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
@@ -104,3 +102,23 @@ $blanc : #ffffff;
     }
   }
 }
+
+.side-nav{
+  transform: translateX(0%) !important;
+
+  span.badge {
+    margin: 0!important;
+  }
+
+  .userView{
+    .name{
+      margin: 0!important;
+      padding: 8px 0!important;
+    }
+
+    .background{
+      background-color: rgb(47, 170, 158);
+    }
+  }
+}
+

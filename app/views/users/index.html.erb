@@ -1,13 +1,13 @@
 <div class="container">
-  <h1 class="bvn">Welcome !</h1>
+  <h1 class="header center-align">Welcome !</h1>
 
   <div class="users">
     <% @users.each do |user| %>
         <div class="user">
-          <%= link_to image_tag(user.img_url), user %>
-          <h2 class="text-center"><%= user.name %></h2>
+          <%= link_to image_tag(user.img_url, class: 'circle responsive-img center-align'), user %>
+          <h4 class="center-align"><%= user.name %></h4>
 
-          <div class="buttons">
+          <div class="buttons center-align">
               <%= link_to edit_user_path(user) do %>
                 <%= icon('edit', class: 'fa-2x', title:'Edit user') %>
               <% end %>
