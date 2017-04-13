@@ -1,4 +1,4 @@
-<%= form_for(user_post_path(user)) do |f| %>
+<%= form_for(user_post_path(@user)) do |f| %>
 
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -11,14 +11,11 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= f.label :content %>
     <%= f.text_field :content %>
   </div>
-
   <div class="actions">
     <%= f.submit %>
   </div>
-
 <% end %>
