@@ -1,9 +1,7 @@
 <ul style="width: 300px;" class="side-nav fixed show">
   <li>
     <div class="userView">
-      <div class="background">
-          <!--<img src="http://lorempicsum.com/nemo/350/200/1">-->
-      </div>
+      <div class="background teal lighten-2"></div>
       <a href="#!user"><%= image_tag(@user.img_url, class:'circle') %></a>
       <a href="#!name"><span class="white-text name"><%= @user.name %></span></a>
     </div>
@@ -14,25 +12,21 @@
   </div>
 </ul>
 
+<!-- Modal Trigger -->
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a href="#modal1" id="menu" class="btn btn-floating btn-large teal lighten-2"><i class="material-icons">comment</i></a>
+</div>
 
-<p>
-  <strong>Img url:</strong>
-  <%= @user.img_url %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Followers', user_followers_path(@user) %> |
-<%= link_to 'Following', user_followings_path(@user) %> |
-<%= link_to 'Back', users_path %>
-
-<p>
-  <strong> Posts :</strong>
-</p>
-
-<% @posts.each do |post| %>
-  <div>
-    <p> <%= post.content %></p>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Tweets tweets tweets</h4>
+      <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Share your mood!</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat teal lighten-2">Send<i class="material-icons">done</i></a>
+    </div>
   </div>
-<% end %>
-
-<% render 'posts/form', 'post': @new_post, 'user': @user  %>
