@@ -10,7 +10,12 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @posts = @user.posts
+    @my_posts = @user.posts
+    @posts = []
+    @user.followings.each do |f|
+        @posts << f.posts
+    end
+    @posts.sort_by{|e| e[:created_at]}
     @new_post = Post.new
   end
 

@@ -18,7 +18,8 @@
 <% @posts.each do |post| %>
   <div>
     <p> <%= post.content %></p>
-
+  </div>
+<%end%>
 <!-- Modal Trigger -->
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
   <a href="#modal1" id="menu" class="btn btn-floating btn-large teal lighten-2"><i class="material-icons">comment</i></a>
@@ -29,14 +30,10 @@
     <div class="modal-content">
       <h4>Tweets tweets tweets</h4>
       <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Share your mood!</label>
-        </div>
+        <%= render 'posts/form', 'post': @new_post %>
+      </div>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect btn-flat teal lighten-2">Send<i class="material-icons">done</i></a>
     </div>
   </div>
-<% end %>
-
-<%= render 'posts/form', 'post': @new_post %>
