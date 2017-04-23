@@ -15,6 +15,10 @@ class UsersController < ApplicationController
     @user.followings.each do |f|
         @posts << f.posts
     end
+    @my_posts.each do |p|
+      @posts << p
+    end
+
     @posts.sort_by{|e| e[:created_at]}
     @new_post = Post.new
   end
