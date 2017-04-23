@@ -22,13 +22,13 @@ class PostsController < ApplicationController
   # POST /users/1/post
   # POST /users/1/post.json
   def create
-
+    @post = Post.new(content: params[:post][:content], user_id: @user.id)
     respond_to do |format|
-      if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+      if @post.save
+        format.html { redirect_to @user }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
+        format.html { redirect_to @user }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
