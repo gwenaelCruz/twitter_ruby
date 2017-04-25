@@ -13,7 +13,9 @@ class UsersController < ApplicationController
     @my_posts = @user.posts
     @posts = []
     @user.followings.each do |f|
-        @posts << f.posts
+      f.posts.each do |p|
+        @posts << p
+      end
     end
     @my_posts.each do |p|
       @posts << p

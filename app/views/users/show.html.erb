@@ -8,8 +8,8 @@
       </div>
     </li>
     <div class="collection">
-      <a href="#!" class="collection-item"><span class="badge"><%= @user.followers.count %></span>Followers</a>
-      <a href="#!" class="collection-item waves-effect"><span class="badge"><%= @user.followings.size %></span>Followings</a>
+      <a href="<%= user_followers_path(@user) %>" class="collection-item"><span class="badge"><%= @user.followers.count %></span>Followers</a>
+      <a href="<%= user_followings_path(@user) %>" class="collection-item waves-effect"><span class="badge"><%= @user.followings.size %></span>Followings</a>
     </div>
   </ul>
 </header>
@@ -18,8 +18,27 @@
   <div class="container">
     <% @posts.each do |post| %>
       <div class="row">
-        <div class="col s12 m9 l10">
-          <p> <%= post.content %></p>
+        <div class="col s12 m9 l8 offset-l1">
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="valign-wrapper">
+                  <div class="col s2 l2">
+                    <img src="<%= post.user.img_url %>" alt="" class="circle responsive-img">
+                  </div>
+                  <div class="col s8 l8">
+                    <span class=""> <%= post.user.name %> </span>
+                  </div>
+                  <div class="col s2 l2 grey-text text-lighten-1">
+                    <%= post.created_at.to_date %>
+                  </div>
+                </div>
+                <div class="col s12 l12 offset-l2">
+                  <%= post.content %>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     <%end%>
