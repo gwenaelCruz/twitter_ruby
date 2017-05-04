@@ -20,8 +20,7 @@ class UsersController < ApplicationController
     @my_posts.each do |p|
       @posts << p
     end
-
-    @posts.sort_by{|e| e[:created_at]}
+    @posts = @posts.sort_by{|e| e[:created_at]}.reverse
     @new_post = Post.new
   end
 
