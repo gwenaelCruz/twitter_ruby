@@ -1,23 +1,47 @@
 <div class="container">
   <h1 class="header center-align">Welcome !</h1>
 
-  <div class="users">
+  <div class="row">
     <% @users.each do |user| %>
-        <div class="user">
-          <%= link_to image_tag(user.img_url, class: 'circle responsive-img center-align'), user %>
-          <h4 class="center-align"><%= user.name %></h4>
+          <div class="col s6 m3 l3 offset-l1">
+             <div class="card z-depth-5">
+              <div class="card-image">
+                <%= link_to image_tag(user.img_url, class: 'circle responsive-img center-align'), user %>
+                <span class="card-title"><%= user.name %></span>
+                <div class="click-to-toggle">
+                  <a class="btn-floating btn-large red">
+                    <i class="large material-icons">mode_edit</i>
+                  </a>
+                  <ul>
+                    <li>
+                      <%= link_to edit_user_path(user), class: 'btn-floating blue' do %>
+                        <%= icon('edit', class: 'fa-2x', title:'Edit user') %>
+                      <% end %>
+                    </li>
+                    <li>
+                      <%= link_to user, class: 'btn-floating yellow', method: :delete, data: { confirm: 'Are you sure?' } do %>
+                        <%= icon('trash', class: 'fa-2x', title:'Delete user') %>
+                      <% end %>
+                    </li>
+                  </ul>
+                </div>
 
-          <div class="buttons center-align">
-              <%= link_to edit_user_path(user) do %>
-                <%= icon('edit', class: 'fa-2x', title:'Edit user') %>
-              <% end %>
-              <%= link_to user, method: :delete, data: { confirm: 'Are you sure?' } do %>
-                <%= icon('trash', class: 'fa-2x', title:'Delete user') %>
-              <% end %>
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+              </div>
+            </div>
           </div>
-        </div>
     <% end %>
-    <div class="user">
+    <div class="col s6 m3 l3 user">
       <%= link_to new_user_path do %>
         <div class="placeholder"></div>
       <% end %>
@@ -27,3 +51,11 @@
 
 <br>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function () {
+    $(".fixed-action-btn").openFAB();
+    $(".fixed-action-btn").closeFAB();
+    $(".fixed-action-btn.toolbar")
+})
+</script>

@@ -11,9 +11,10 @@
       </ul>
     </div>
   <% end %>
+    <i class="material-icons prefix">mode_edit</i>
     <%= f.text_area :content, class: "materialize-textarea" %>
-    <%= f.label :content, "Share your mood" %>
+    <%= f.label :content, "Share your mood!" %>
     <%=
-      f.button class: "modal-action modal-close waves-effect btn-flat teal lighten-2"
+      f.button class: "modal-action modal-close waves-effect btn-flat teal lighten-2 white-text"
     %>
 <% end %>
