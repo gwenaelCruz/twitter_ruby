@@ -8,7 +8,7 @@
 
 User.create(id: 1, name: 'Bailey Wonger', img_url: 'http://i.pravatar.cc/300?u=a042582942677dsqd')
 User.create(id: 2, name: 'Indigo Violet', img_url: 'http://i.pravatar.cc/300?u=a042581f4e2942677dsqd')
-User.create(id: 3, name: 'Archbald Northbottom', img_url: 'http://i.pravatar.cc/300?u=a042581f4e294267')
+User.create(id: 3, name: 'Archibald Northbottom', img_url: 'http://i.pravatar.cc/300?u=a042581f4e294267')
 User.create(id: 4, name: 'Jake Weary', img_url: 'http://i.pravatar.cc/300?u=a042581f4e294268ds')
 User.create(id: 5, name: 'Piff Jenkins', img_url: 'http://i.pravatar.cc/300?u=a042581f4e29426')
 User.create(id: 6, name: 'Eleanor Fant', img_url: 'http://i.pravatar.cc/300?u=a042581f4e29426708d')
