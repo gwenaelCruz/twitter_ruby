@@ -7,7 +7,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "get user" do
-    assert_equal(User.count, 2)
+    assert_equal(User.count, 3)
   end
 
   test "new user" do
@@ -19,7 +19,7 @@ class UserTest < ActiveSupport::TestCase
 
 
   test "delete user" do
-    user = User.find_by_name("Test1")
+    user = users(:one)
     assert user.destroy
   end
 end

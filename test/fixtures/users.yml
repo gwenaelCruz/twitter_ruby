@@ -2,10 +2,15 @@
 
 one:
   id: 1
-  name: Test1
+  name: User_Test_1
   img_url: url_test_1
 
 two:
   id: 2
-  name: Test2
+  name: User_Test_1
   img_url: url_test_2
+
+three:
+  id: 3
+  name: User_Test_3
+  img_url: url_test_3
