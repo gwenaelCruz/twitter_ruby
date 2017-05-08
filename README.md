@@ -1,24 +1,28 @@
-# README
+## Getting Started
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Vérifiez que vous avez Ruby d'installé sur votre machine:
 
-Things you may want to cover:
+        $ ruby -v
+        
+    Si c'est bon vous pouvez installer Bundler et Rails:
+    
+        $ gem install bundler
+        $ gem install rails
+        
+2. Clonez notre application puis déplacez vous dans le dossier de l'appliaction:
 
-* Ruby version
+        $ git clone https://github.com/gwenaelCruz/twitter_ruby.git
+        $ cd twitter_ruby
 
-* System dependencies
+3. Mettez à jour l'application:
 
-* Configuration
+        $ bundle install
+        $ rake db:setup
+        $ rake db:migrate
 
-* Database creation
+4. Lancer l'application:
 
-* Database initialization
+        $ rails server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+5. Utilisez votre navigateur préféré, allez sur `http://localhost:3000`:
+"C'est terminé !"
