@@ -18,7 +18,6 @@
 
         $ bundle install
         $ rake db:setup
-        $ rake db:migrate
 
 4. Lancer l'application:
 
