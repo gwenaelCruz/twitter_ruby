@@ -1,6 +1,6 @@
 ## Getting Started
 
-1. Vérifiez que vous avez Ruby d'installé sur votre machine:
+1. Vérifiez que vous avez Ruby d'installé sur votre machine, ainsi que sqlite:
 
         $ ruby -v
         
