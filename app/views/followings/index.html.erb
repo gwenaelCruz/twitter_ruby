@@ -1,5 +1,4 @@
 <div class="container">
-  <p id="notice"><%= notice %></p>
   <h1 class="header center-align teal-text text-lighten-2">Your followers</h1>
 
   <div class="row">
@@ -26,7 +25,7 @@
   </div>
 </div>
 <script type="text/javascript" charset="utf-8">
-  var notice = <%= notice %>;
+  var notice = "<%= notice %>";
 
   $(document).ready(function() {
       if(notice.trim().length > 0) {
