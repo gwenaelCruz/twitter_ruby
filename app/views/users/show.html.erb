@@ -3,8 +3,8 @@
     <li>
       <div class="userView">
         <div class="background teal lighten-2"></div>
-        <a href="#!user"><%= image_tag(@user.img_url, class:'circle z-depth-2') %></a>
-        <a href="#!name"><span class="white-text name"><%= @user.name %></span></a>
+        <a href="<%= user_path(@user) %>"><%= image_tag(@user.img_url, class:'circle z-depth-2') %></a>
+        <a href="<%= user_path(@user) %>"><span class="white-text name"><%= @user.name %></span></a>
       </div>
     </li>
     <div class="collection">
