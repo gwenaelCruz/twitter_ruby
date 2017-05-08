@@ -4,6 +4,9 @@ class PostsController < ApplicationController
   # GET /users/posts
   # GET /users.json
   def index
+    @posts = @user.posts
+    @posts = @posts.sort_by{|e| e[:created_at]}.reverse
+    @new_post = Post.new
   end
 
   # GET /users/1/post/1
