@@ -10,6 +10,18 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @my_posts = @user.posts
+    @posts = []
+    @user.followings.each do |f|
+      f.posts.each do |p|
+        @posts << p
+      end
+    end
+    @my_posts.each do |p|
+      @posts << p
+    end
+    @posts = @posts.sort_by{|e| e[:created_at]}.reverse
+    @new_post = Post.new
   end
 
   # GET /users/new

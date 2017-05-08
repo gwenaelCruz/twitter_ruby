@@ -1,9 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  img_url: MyString
+  id: 1
+  name: User_Test_1
+  img_url: url_test_1
 
 two:
-  name: MyString
-  img_url: MyString
+  id: 2
+  name: User_Test_1
+  img_url: url_test_2
+
+three:
+  id: 3
+  name: User_Test_3
+  img_url: url_test_3

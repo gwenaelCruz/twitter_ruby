@@ -1,2 +1,5 @@
 .idea
-/vendor/bundle
+vendor/bundle
+db/*.sqlite3
+tmp
+log

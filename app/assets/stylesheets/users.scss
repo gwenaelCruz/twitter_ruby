@@ -1,3 +1,21 @@
 // Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$textColor: #272727;
+
+.side-nav{
+  transform: translateX(0%) !important;
+
+  span.badge {
+    margin: 0!important;
+  }
+
+  .userView{
+    .name{
+      margin: 0!important;
+      padding: 8px 0!important;
+    }
+  }
+}
+
