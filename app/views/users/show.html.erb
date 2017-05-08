@@ -3,7 +3,7 @@
     <li>
       <div class="userView">
         <div class="background teal lighten-2"></div>
-        <a href="#!user"><%= image_tag(@user.img_url, class:'circle') %></a>
+        <a href="#!user"><%= image_tag(@user.img_url, class:'circle z-depth-2') %></a>
         <a href="#!name"><span class="white-text name"><%= @user.name %></span></a>
       </div>
     </li>
@@ -24,16 +24,16 @@
               <div class="row">
                 <div class="valign-wrapper">
                   <div class="col s2 l2">
-                    <img src="<%= post.user.img_url %>" alt="" class="circle responsive-img">
+                    <img src="<%= post.user.img_url %>" alt="" class="circle responsive-img z-depth-2">
                   </div>
                   <div class="col s8 l8">
-                    <span class=""> <%= post.user.name %> </span>
+                    <h5 class=""> <%= post.user.name %> </h5>
                   </div>
                   <div class="col s2 l2 grey-text text-lighten-1">
                     <%= post.created_at.to_date %>
                   </div>
                 </div>
-                <div class="col s12 l12 offset-l2">
+                <div class="col s12 l8 offset-l2">
                   <%= post.content %>
                 </div>
               </div>
@@ -49,18 +49,24 @@
 
 <!-- Modal Trigger -->
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-  <a href="#modal1" id="menu" class="btn btn-floating btn-large teal lighten-2"><i class="material-icons">comment</i></a>
+  <a onclick="$('#modal1').modal('open');" id="menu" class="btn btn-floating btn-large teal lighten-2"><i class="material-icons">comment</i></a>
 </div>
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-content">
-      <h4>Tweets tweets tweets</h4>
-      <div class="input-field col s12">
-        <%= render 'posts/form', 'post': @new_post %>
+      <div class="container">
+        <div class="input-field col s12">
+            <%= render 'posts/form', 'post': @new_post %>
+        </div>
       </div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect btn-flat teal lighten-2">Send<i class="material-icons">done</i></a>
     </div>
   </div>
+
+<script>
+  $(document).ready(function(){
+    $('#modal1').modal();
+});
+</script>
