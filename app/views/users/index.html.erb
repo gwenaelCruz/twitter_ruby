@@ -35,21 +35,10 @@
             </div>
           </div>
     <% end %>
-    <div class="col s6 m3 l3 user">
-      <%= link_to new_user_path do %>
-        <div class="placeholder"></div>
+    <div class="fixed-action-btn">
+      <%= link_to new_user_path, class: 'btn-floating btn-large teal lighten-2' do %>
+          <i class="large material-icons">add</i>
       <% end %>
     </div>
-
   </div>
-
-<br>
 </div>
-
-<script type="text/javascript" charset="utf-8">
-$(document).ready(function () {
-    $(".fixed-action-btn").openFAB();
-    $(".fixed-action-btn").closeFAB();
-    $(".fixed-action-btn.toolbar")
-})
-</script>

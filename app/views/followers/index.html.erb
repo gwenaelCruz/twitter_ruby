@@ -1,15 +1,18 @@
 <div class="container">
-  <h1 class="bvn">People who follow you</h1>
+  <h1 class="header center-align teal-text text-lighten-2">People who follow you</h1>
 
-  <div class="users">
+  <div class="row">
     <% @followers.each do |follower| %>
-        <div class="user">
-          <%= link_to image_tag(follower.img_url), follower %>
-          <h2 class="text-center"><%= follower.name %></h2>
+        <div class="col s6 m3 l3 offset-l1">
+          <div class="card z-depth-5">
+            <div class="card-image">
+              <%= link_to image_tag(follower.img_url , class: 'circle responsive-img center-align'), follower %>
+            </div>
+            <div class="card-content">
+              <span class="card-title"><%= follower.name %></span>
+            </div>
+          </div>
         </div>
     <% end %>
-
   </div>
-
-<br>
 </div>

@@ -1,25 +1,27 @@
 <div class="container">
-
   <p id="notice"><%= notice %></p>
+  <h1 class="header center-align teal-text text-lighten-2">Your followers</h1>
 
-  <h1>People you follow </h1>
-
-  <div class="users">
+  <div class="row">
     <% @followings.each do |following| %>
-      <div class="user">
-        <%= link_to image_tag(following.img_url), following %>
-            <h2 class="text-center"><%= following.name %></h2>
-        <div class="buttons">
-            <%= link_to user_following_path(@user.id, following), method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <%= icon('trash', class: 'fa-2x', title:'Delete user from your list') %>
-            <% end %>
+        <div class="col s6 m3 l3 offset-l1">
+          <div class="card z-depth-5">
+            <div class="card-image">
+              <%= link_to image_tag(following.img_url, class: 'circle responsive-img center-align'), following %>
+              <%= link_to user_following_path(@user.id, following), method: :delete, class: 'halfway-fab red btn-floating' , data: { confirm: 'Are you sure?' } do %>
+                  <i class="material-icons">delete</i>
+              <% end %>
+            </div>
+            <div class="card-content">
+              <span class="card-title"><%= following.name %></span>
+            </div>
+          </div>
         </div>
+    <% end %>
+      <div class="fixed-action-btn">
+        <%= link_to new_user_following_path, class: 'btn-floating btn-large teal lighten-2' do %>
+            <i class="large material-icons">add</i>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-  <div class="user">
-    <%= link_to new_user_following_path do %>
-      <div class="placeholder"></div>
-    <% end %>
   </div>
 </div>
